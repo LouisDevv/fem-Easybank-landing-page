@@ -7,17 +7,16 @@ let links = document.getElementsByClassName("nav-links");
 
 // Navigation
 
-mobileNavToggle.addEventListener("click", myMenu)
+mobileNavToggle.addEventListener("click", myMenu);
 
 for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', myMenu, false);
+  links[i].addEventListener("click", myMenu, false);
 }
 
-function myMenu(){
-    openMenu.toggleAttribute("visibility");
-    closeMenu.toggleAttribute("visibility");
-    primaryNav.toggleAttribute("visibility");
-    navList.toggleAttribute("visibility");
-    document.body.classList.toggle("modal-open");
+function myMenu() {
+  openMenu.toggleAttribute("visibility");
+  closeMenu.toggleAttribute("visibility");
+  primaryNav.toggleAttribute("visibility");
+  navList.toggleAttribute("visibility");
+  document.body.classList.toggle("modal-open");
 }
-
